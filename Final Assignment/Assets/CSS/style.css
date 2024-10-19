@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
+    hsla(240, 2%, 11%, 0) 100%), 
+    hsl(240, 2%, 13%);
+}
+
+body {
+    margin: 5% 10%;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    background-color: hsl(0, 0%, 22%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+    background-color: rgb(0, 248, 248);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: hsl(0, 0%, 22%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.aside-content {
+    margin-bottom: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cv iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Navigation */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Sections */
+.about, .projects, .cv, .contact {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+:target {
+    display: block;
+}
+
+:target ~ article {
+    display: none;
+}
